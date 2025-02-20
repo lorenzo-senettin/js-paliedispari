@@ -12,6 +12,16 @@ function reverseWord(userWord) {
   }
   return word;
 }
-
 const reversedWord = reverseWord(userWord);
 console.log(reversedWord);
+
+
+// check palindrome
+function isPalindrome(userWord, reversedWord) {
+  if (userWord.toLowerCase() === reversedWord.toLowerCase()) {
+    console.log(`La parola è palindroma!`);
+  } else {
+    console.log(`La parola non è palindroma!`);
+  }
+}
+isPalindrome(userWord, reversedWord);
